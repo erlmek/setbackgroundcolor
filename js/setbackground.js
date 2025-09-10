@@ -21,6 +21,7 @@ console.log(pTags)
 let pArray = Array.from(pTags);
 console.log(pArray);
 
+
 function increaseFont(element) {
     console.log("element");
     let fontSize = element.style.fontSize;
