@@ -22,7 +22,11 @@ function fillDropdownObj(item) {
     console.log(item)
     const el = document.createElement("option")
     el.textContent = item.name
-    el.value = item.id
+    //el.value = item.id
+    el.value = item.id;
+    el.colorItem = item;
+    console.log("el")
+    console.log(el)
     ddColor2.appendChild(el)
 }
 
@@ -33,6 +37,7 @@ function addColors2(btn) {
 
 function setBackgroundColor2(e) {
     const color = ddColor2.value
+    console.log(color)
     bdy.style.backgroundColor = color
 }
 
